@@ -12,6 +12,8 @@ Kind: https://kind.sigs.k8s.io/docs/user/quick-start/
 Helm: https://helm.sh/docs/intro/install/
 
 ### Subir ambiente trabalhado no curso
+Importante alterar o o path de volumes do kind, no arquivo `kind-config.yaml` linha 7
+
 ```bash
 sudo chmod +x init.sh
 bash init.sh
