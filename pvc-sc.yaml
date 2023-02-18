@@ -1,0 +1,12 @@
+# Obs: foi utilizado no GCP
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-2
+spec:
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: slow
+  accessModes:
+    - ReadWriteOnce
