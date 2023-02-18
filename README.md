@@ -4,8 +4,11 @@
 > Obs: Sistema operacional linux, não foi testado em outro sistema.
 
 Docker: https://docs.docker.com/engine/install/ubuntu/
+
 Kubectl: https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
 Kind: https://kind.sigs.k8s.io/docs/user/quick-start/
+
 Helm: https://helm.sh/docs/intro/install/
 
 ### Subir ambiente trabalhado no curso
@@ -15,7 +18,7 @@ bash init.sh
 ```
 
 > Obs: caso o port-foward não funcione, observar os pods (kubectl get pods) 
-> e quando estiverem prontos, rodar os comandos da linha 26 e 28
+> e quando estiverem prontos, rodar os comandos da linha 26 e 28 do script init.sh
 
 O portal de notícias está disponível no endereço:
 **http://localhost:30000**
