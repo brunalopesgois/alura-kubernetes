@@ -1,0 +1,15 @@
+# Obs: foi utilizado no GCP
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-1
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: pv-disk
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: standard
