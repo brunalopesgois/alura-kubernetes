@@ -27,6 +27,20 @@ spec:
             name: imagens
           - mountPath: /tmp
             name: sessao
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          periodSeconds: 10
+          failureThreshold: 3
+          initialDelaySeconds: 20
+        readinessProbe:
+          httpGet:
+            path: /inserir-noticias.php
+            port: 80
+          periodSeconds: 10
+          failureThreshold: 5
+          initialDelaySeconds: 3
       volumes:
         - name: imagens
           persistentVolumeClaim:
